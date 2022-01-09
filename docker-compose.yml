@@ -1,0 +1,22 @@
+version: "3"
+services:
+  cloudsek:
+    build: .
+    container_name: cloudsek
+    volumes:
+      - .:/usr/app
+    command:
+      sh -c "mvn clean install && java -jar target/cloudsek.jar"
+    ports:
+      - 8086:8086
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=cloudsek
+    ports:
+      - 3306:3306
+

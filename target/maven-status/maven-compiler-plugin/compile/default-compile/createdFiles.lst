@@ -1,0 +1,5 @@
+com/cloudsek/assignment/controller/CalculateController.class
+com/cloudsek/assignment/model/NumberEquality.class
+com/cloudsek/assignment/Assignment.class
+com/cloudsek/assignment/repository/StoreVariableToDatabase.class
+com/cloudsek/assignment/model/Response.class

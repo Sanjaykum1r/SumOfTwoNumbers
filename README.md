@@ -82,3 +82,40 @@
 - Requirement to run this application.
   - Before running this application make sure that your system port **3306 & 8086** is free because MySQL is using port 3306 and the spring application will use 8086.
   - After this you can simply run **sudo docker-compose up** which will run the application on port 8086.
+
+## End Point table
+
+<html>
+ <table>
+  <tr>
+    <th>VERBS</th>
+    <th>LINK</th>
+    <th>PATH_VARIABLE</th>
+<th>Result</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>http://localhost:8086/</td>
+    <td> </td>
+<td>Hi from test API</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>http://localhost:8086/calculate/34/45</td>
+    <td> 34,45</td>
+<td>2060</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>http://localhost:8086/get_answer/2060</td>
+    <td>2060</td>
+<td>status_code: 200
+message: 79</td>
+  </tr>
+
+
+</table> 
+
+
+
+</html>
